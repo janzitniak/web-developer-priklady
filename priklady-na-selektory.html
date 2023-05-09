@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Príklady na selektory</title>
+    <style>
+        .farba-popredia {
+            color: orange;
+        }
+
+        .farba-pozadia {
+            background-color: green;
+        }
+
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            background-color: yellow;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        div > p {
+            color: red;
+        }
+
+        div p {
+            color: blue;
+        }
+
+        /* V tomto príklade sa tieň vytvorí 2 pixely vpravo a 2 pixely dole od prvku s triedou "box", s rozmazaním 4 pixely a čiastočnou priehľadnosťou 0,3. */
+        /* Vsimnime si  */
+        .tienovany-box {
+            background-color: lightyellow;
+            -moz-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3); /* Pre Firefox */
+            -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3); /* Pre Safari, Google Chrome, Opera */
+            box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3); /* Pre Microsoft Edge */
+        }
+
+        p[id=oranzovy-odstavec] {
+            color: orange;
+        }
+
+        .red:nth-of-type(1) {
+            border: 5px solid red;
+        }
+
+        p span {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<p class="farba-popredia farba-pozadia">Toto je text, ktorý má farbu popredia
+    oranžovú a farbu pozadia zelenú</p>
+<div>
+    <p>Prvý odstavec</p>
+    <p>Druhý odstavec</p>
+    <span>
+            <p>Odstavec, ktorý je vnútri span</p>
+    </span>
+</div>
+
+<div>
+    <a href="#">Odkaz</a>
+</div>
+
+<div class="tienovany-box">Tento DIV má tieň</div>
+<p>Odstavec</p>
+<p id="oranzovy-odstavec">Oranžový odstavec</p>
+
+<div class="home">
+    <span>blah</span>
+    <p class="red">first</p>
+    <p class="red">second</p>
+    <p class="red">third</p>
+    <p class="red">fourth</p>
+</div>
+
+<p>
+    Nejaky text, ktory ma <span  >teraz</span> napadol.
+</p>
+
+
+</body>
+</html>

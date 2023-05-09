@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Najpoužívanejšie CSS príkazy</title>
+    <style>
+        .cervena {
+            color: red;
+        }
+        .pismo {
+            font-family: "Arial Black";
+        }
+        .velkostpisma {
+            font-size: 20px;
+        }
+        .oranzovepozadie {
+            background-color: orange;
+        }
+        .vonkajsihornyokraj {
+            margin-top: -20px;
+        }
+        .prvykontajner {
+            background-color: yellow;
+            width:20%;
+            height:300px;
+        }
+        .druhykontajner {
+            background-color: green;
+            width:400px;
+            height:300px;
+            margin-top:0px;
+        }
+        .tretikontajner {
+            background-color: blue;
+        }
+        #oramovanytext {
+            border: 1px solid black;
+        }
+        #oramovanytextdetailne {
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+    </style>
+</head>
+<!--
+Úloha na ukážku základných CSS a HTML príkazov
+CSS (Cascading Style Sheets) je jazyk, ktorý sa používa na formátovanie webových stránok. Tu je zoznam najpoužívanejších CSS príkazov:
+
+OK color - Nastavuje farbu textu.
+OK font-family - Nastavuje typ písma.
+OK font-size - Nastavuje veľkosť písma.
+OK background-color - Nastavuje farbu pozadia.
+OK margin - Nastavuje okraje (horný, dolný, ľavý, pravý) elementu.
+OK padding - Nastavuje vnútorný priestor (horný, dolný, ľavý, pravý) elementu.
+border - Nastavuje hrúbku, typ a farbu ohraničenia elementu.
+text-align - Nastavuje zarovnanie textu.
+float - Nastavuje, na ktorú stranu má byť element zarovnaný (napr. vľavo alebo vpravo).
+display - Nastavuje spôsob, ako sa element zobrazí (napr. ako blokový alebo riadkový element).
+-->
+<body>
+    <p class="cervena">Toto je text červenou farbou.</p>
+
+    <p class="pismo">Toto je text vypísaný fontom Arial Black a je modrou farbou.</p>
+
+    <p class="velkostpisma">Text, ktorý má veľkosť písma 20 pixelov (px, t.j. obrazových bodov)</p>
+
+    <p class="oranzovepozadie">Text, ktorý má oranžové pozadie</p>
+
+    <p class="vonkajsihornyokraj">Nejaký text</p>
+
+    <div class="prvykontajner">
+        <!--Div sluzi na to, aby sme don vlozili rozny obsah, napr. nadpisy, texty, obrazky, tabulky, formulare, atd.-->
+        <p>Prvý kontajner (div)</p>
+        <img src="slovensko.gif" style="width:50%; height:50%; margin-left:40px;" alt="Mapa Slovenska">
+    </div>
+
+    <div class="druhykontajner">
+        <p style="padding:40px;">Druhý kontajner (div)</p>
+    </div>
+
+    <div class="tretikontajner">
+        <p style="padding: 40px 50px 60px 70px;">Tretí kontajner (div)</p>
+    </div>
+
+    <p id="oramovanytext">Text orámovaný</p>
+    <p id="oramovanytextdetailne">Text orámovaný použitím jednotlivých CSS border príkazov</p>
+
+    <div style="text-align: center; background-color: orange; margin-top: -15px;">
+        <!-- Vsetko co je v DIV bude prisposene stylu, ktory sme mu nastavili -->
+        <p>Vycentrovaný text</p>
+        <img src="slovensko.gif" alt="Mapa Slovenska" style="width:20%; height:20%;">
+    </div>
+
+    <div>
+        <div style="background-color: red; width: 250px; height: 250px; float:left;">
+            Prvý kontajner (div)
+        </div>
+        <div style="background-color: green; width: 250px; height: 250px; float:right;">
+            Druhý kontajner (div)
+        </div>
+        <div style="background-color: blue; width: 250px; height: 250px; float:right;">
+            Tretí kontajner (div)
+        </div>
+    </div>
+
+    <!-- Vyresetujeme poziciu pre dalsi element na stranke -->
+    <br style="clear:both;">
+
+    <!-- Pevná medzera je reprezentovaná HTML entitou &nbsp; -->
+    <p style="">Toto je 5 medzier &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; za ktorými pokračuje tento text.</p>
+
+</body>
+</html>

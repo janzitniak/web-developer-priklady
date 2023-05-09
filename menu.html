@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigačné menu</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: blue;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        #home {
+            background-color: red;
+        }
+
+        #news {
+            background-color: green;
+        }
+
+        #contact {
+            background-color: blue;
+        }
+
+        body {
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <nav>
+        <ul>
+            <li><a class="active"
+                   href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Animi assumenda eligendi est harum molestiae saepe velit vero. Ab amet
+    consectetur corporis cum esse explicabo ipsa, ipsam maxime odio sed vel!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+    consequuntur harum magnam possimus reprehenderit suscipit! Eum, magni,
+    repellendus. At cupiditate dolor dolore et hic itaque officiis,
+    perspiciatis placeat quos repudiandae! Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Ab et, expedita itaque porro rem
+    repudiandae rerum tempore! Amet cum doloremque enim error eveniet harum
+    ipsam itaque magnam optio quae! Ut.
+</div>
+
+<div id="news">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Animi assumenda eligendi est harum molestiae saepe velit vero. Ab amet
+    consectetur corporis cum esse explicabo ipsa, ipsam maxime odio sed vel!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+    consequuntur harum magnam possimus reprehenderit suscipit! Eum, magni,
+    repellendus. At cupiditate dolor dolore et hic itaque officiis,
+    perspiciatis placeat quos repudiandae! Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Ab et, expedita itaque porro rem
+    repudiandae rerum tempore! Amet cum doloremque enim error eveniet harum
+    ipsam itaque magnam optio quae! Ut.
+</div>
+
+<div id="contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Animi assumenda eligendi est harum molestiae saepe velit vero. Ab amet
+    consectetur corporis cum esse explicabo ipsa, ipsam maxime odio sed vel!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+    consequuntur harum magnam possimus reprehenderit suscipit! Eum, magni,
+    repellendus. At cupiditate dolor dolore et hic itaque officiis,
+    perspiciatis placeat quos repudiandae! Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Ab et, expedita itaque porro rem
+    repudiandae rerum tempore! Amet cum doloremque enim error eveniet harum
+    ipsam itaque magnam optio quae! Ut.
+</div>
+</body>
+</html>

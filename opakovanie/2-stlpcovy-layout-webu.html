@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Dvojstĺpcový layout webu - opakovanie</title>
+    <style>
+        .hlavny {
+            display: flex;
+            flex-direction: column;
+            background-color: lightskyblue;
+            padding: 50px; /* Nastavili sme vnutorny okraj tohto kontajnera, cize vsetko v nom bude zacinat vo vnutri. Jedno cislo znamena, ze tie okraje nastavene z kazdej strany */
+        }
+        .hlavicka, .patka {
+            background-color: turquoise;
+            height: 100px;
+            padding: 20px;
+        }
+        .patka {
+            margin-top: 20px;
+        }
+        .telo {
+            /*background-color: red;*/
+            display: flex;
+            flex-direction: row;
+        }
+        .lavy {
+            background-color: springgreen;
+            width: 30%;
+            height: 500px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .pravy {
+            background-color: darkorange;
+            width: 70%;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 20px;
+        }
+        .pravy-telo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pravy-telo-lavy-image, .pravy-telo-stredny-image, .pravy-telo-pravy-image {
+            width: 20%;
+            background-color: yellow;
+            margin: 20px;
+        }
+
+        .patka-logo {
+            text-align: right;
+            margin-top: 20px;
+            float: right;
+            background-color: red;
+            width: 200px;
+        }
+
+        .obrazok {
+            width: 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hlavny">
+        <header class="hlavicka">Nejaká hlavička</header>
+        <div class="telo">
+            <div class="lavy">Ľavý box Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos, est et eveniet odit omnis perspiciatis porro quae quibusdam quis, similique sint tempora unde. Eum perferendis porro sequi veritatis voluptatibus.</div>
+            <div class="pravy">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ad architecto blanditiis culpa dolore facilis fugiat illum in minus modi mollitia nisi quae repellendus reprehenderit soluta suscipit tempore voluptatem voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam blanditiis distinctio eius est eum ex exercitationem in ipsam laboriosam magnam minima, nesciunt nisi possimus quod saepe sint velit voluptates!</div>
+                <div class="pravy-telo">
+                    <div class="pravy-telo-lavy-image">
+                        Ľavy Image
+                    </div>
+
+                    <div class="pravy-telo-stredny-image">
+                        Stredný Image
+                    </div>
+
+                    <div class="pravy-telo-pravy-image">
+                        Pravý Image
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="patka">Nejaká pätka</footer>
+        <!-- TODO Doplnit napravo logo, v praxi byva akykolvek obsah tiez v kontajneri, cize v DIV-e. -->
+    </div>
+</body>
+</html>
+<!-- TODO "Kontrola" 19.35 -->
