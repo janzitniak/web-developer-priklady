@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jednoduchý formulár</title>
+</head>
+<body>
+    <form action="uloz-formular.php" method="get">
+        <label for="meno">Meno</label>
+        <input id="meno" name="meno" placeholder="Zadaj svoje meno" size="10" type="text">
+
+        <br>
+        <br>
+
+        <label for="priezvisko">Priezvisko</label>
+        <input id="priezvisko" name="priezvisko" placeholder="Zadaj priezvisko" required size="20" type="text">
+
+        <br>
+        <br>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" placeholder="Zadaj e-mail" required size="20" type="email" value="@">
+
+        <br>
+        <br>
+
+        <label for="heslo">Heslo</label>
+        <input id="heslo" name="heslo" placeholder="Heslo musí obsahovať malé a veľké písmená + špeciálne znaky" required size="20" type="password">
+
+        <br>
+        <br>
+
+        <label for="datum">Dátum</label>
+        <input id="datum" name="datum" type="date">
+
+        <br>
+        <br>
+
+        <label for="pohlavie">Pohlavie</label>
+        <select id="pohlavie" name="pohlavie">
+            <option value="muz">Muž</option>
+            <option value="zena">Žena</option>
+            <option selected value="ine">Iné</option>
+        </select>
+
+        <br>
+        <br>
+
+        Ukážka zoznamu cez radio buttony
+        <br>
+        <input id="html" name="fav_language" type="radio" value="HTML">
+        <label for="html">HTML</label><br>
+        <input id="css" name="fav_language" type="radio" value="CSS">
+        <label for="css">CSS</label><br>
+        <input id="javascript" name="fav_language" type="radio" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <br>
+        <br>
+
+        Ukážka checkboxov
+        <br>
+        <input id="vehicle1" name="vehicle1" type="checkbox" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input id="vehicle2" name="vehicle2" type="checkbox" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input id="vehicle3" name="vehicle3" type="checkbox" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+
+        <br>
+        <br>
+
+        <button onclick="alert('Hello World!')" type="button">Click Me!</button>
+
+        <br>
+        <br>
+
+        <label for="poznamka">Poznámka</label>
+        <textarea cols="20" id="poznamka" name="poznamka" placeholder="Nejaká poznámka" rows="10"></textarea>
+
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
