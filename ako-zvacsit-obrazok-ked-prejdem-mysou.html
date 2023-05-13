@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ako zväčšiť obrázok, keď prejdem myšou</title>
+    <style>
+        .hlavny img:hover {
+            transform: scale(1.2);
+            /*transform: rotate(0.5turn);*/
+            transition: transform 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="hlavny">
+        <img src="images/severne-taliansko-Cinque-Terre.jpg" style="width: 500px;"/>
+    </div>
+
+    <!-- Tento obrazok uz nebude obsahovat efekt transform -->
+    <img src="images/severne-taliansko-Cinque-Terre.jpg" style="width: 500px;"/>
+</body>
+</html>
