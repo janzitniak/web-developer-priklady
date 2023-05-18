@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Fotogaléria cez JavaScript</title>
+    <style>
+        button {
+            background-color: floralwhite;
+            border: 1px solid gray;
+            color: gray;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery">
+        <img alt="Avenue" src="images/avenue-gd2fd0c3be_1280.jpg">
+        <img alt="Flowers" src="images/flowers-ge21ab98cb_1280.jpg">
+        <img alt="Pink" src="images/pink-gcd10efcd5_1280.jpg">
+        <img alt="Road" src="images/road-g0bf7739a8_1280.jpg">
+        <img alt="Tree" src="images/tree-g3d13715dd_1280.jpg">
+    </div>
+<button onclick="previousImage()">Previous</button>
+<button onclick="nextImage()">Next</button>
+
+<script>
+    var currentIndex = 0;
+    var images = document.getElementById('gallery').getElementsByTagName('img');
+
+    function showImage(index) {
+/*        if (index < 0 || index >= images.length) {
+            return;
+        }*/
+
+        for (var i = 0; i < images.length; i++) {
+            images[i].style.display = 'none';
+        }
+
+        images[index].style.display = 'block';
+        currentIndex = index;
+    }
+
+    function previousImage() {
+        var newIndex = currentIndex - 1;
+        if (newIndex < 0) {
+            newIndex = images.length - 1;
+        }
+        showImage(newIndex);
+    }
+
+    function nextImage() {
+        var newIndex = currentIndex + 1;
+        if (newIndex >= images.length) {
+            newIndex = 0;
+        }
+        showImage(newIndex);
+    }
+    showImage(currentIndex);
+</script>
+
+</body>
+</html>
