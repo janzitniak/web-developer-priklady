@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="sk">
+    <meta charset="UTF-8">
+    <style>
+        #popup {
+            opacity: 0; /* Pôvodne je obrázok neviditeľný */
+            visibility: hidden; /* Pôvodne je obrázok skrytý */
+            transition: opacity 0.5s ease; /* Prechodová animácia pre opacity */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+
+        #popup img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer; /* Zmení kurzor na ukazovateľ pri prejdení myšou nad ikonu */
+        }
+    </style>
+</head>
+<body>
+<h1>Stránka s postupným "rozsvietením" a zatvorením obrázka</h1>
+
+<div id="popup">
+    <span id="close">&times;</span> <!-- Ikonické zatváracie tlačidlo -->
+    <img alt="Poster" src="images/ukazka-tvarov-a-efektov.jpg">
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus finibus vulputate. Maecenas interdum dolor quis tellus fringilla consequat. Donec nec bibendum purus. Integer at ligula eu ex congue tempor. Nunc sit amet lacus lacus. Duis eu erat id ex dapibus rhoncus. Nullam volutpat lacus id tortor mollis, a sollicitudin libero volutpat. Aliquam vel enim in sapien feugiat vulputate sed vitae enim. Curabitur eleifend ullamcorper neque ac bibendum.</p>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var popup = document.getElementById('popup');
+        var distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (distanceFromTop > 500 && !sessionStorage.getItem('popupShown')) { // Ak je vzdialenosť od vrchu stránky väčšia ako 500
+            popup.style.opacity = '1'; // Nastavíme opacity na 1 (postupné zviditeľnenie)
+            popup.style.visibility = 'visible'; // Nastavíme visibility na "visible"
+        } else {
+            popup.style.opacity = '0'; // Inak nastavíme opacity na 0 (postupné zatemnenie)
+            popup.style.visibility = 'hidden'; // Inak nastavíme visibility na "hidden"
+        }
+    });
+
+    var closeBtn = document.getElementById('close'); // Vyhľadávanie elementu so zatváracím id "close"
+    closeBtn.addEventListener('click', function() { // Pridanie poslucháča udalosti na kliknutie
+        var popup = document.getElementById('popup');
+        popup.style.opacity = '0'; // Nastavenie opacity na 0 (skrytie obrázka)
+        popup.style.visibility = 'hidden'; // Nastavenie visibility na "hidden"
+        sessionStorage.setItem('popupShown', 'true'); // Uloženie informácie o zobrazení popupu
+    });
+</script>
+    });
+</script>
+</body>
+</html>
