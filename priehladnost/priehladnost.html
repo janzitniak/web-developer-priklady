@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+
+        }
+        .prvok1 {
+            background-color: rgba(255,0,0,20%); /* a reprezentuje alpha kanal, cize priesvitnost, ktoru nastavujem od 0 do 1, resp. od 0% do 100%. 0% je dany element uplne priehladny, pri 100% je uplne nepriehladny */
+            width: 200px;
+            position: relative;
+            z-index: 2; // Cim vacsie cislo, tym je viac vpredu (pred nami)
+        }
+
+        .prvok2 {
+            position: relative;
+            background-color: rgba(0,0,200,0.5);
+            width: 200px;
+            z-index: 1;
+            top: -50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="prvok1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa fugit in ipsum iure nisi nobis, repellendus sapiente ut. Consequuntur dolorum fuga quasi qui tempora! Eligendi harum impedit laboriosam molestias nesciunt.
+    </div>
+    <div class="prvok2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda dolore dolores esse ipsam, labore laudantium odio possimus repellendus. A cum dicta earum enim facilis neque porro, voluptatem? Nihil. </div>
+</div>
+</body>
+</html>
