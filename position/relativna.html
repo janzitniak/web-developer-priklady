@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position: relative</title>
+    <style>
+        .wrapper {
+            background-color: lightskyblue;
+        }
+        .pozicia {
+            position:relative;
+            background-color:red;
+            max-width: 200px;
+        }
+        .pozicia-druha {
+            position:relative;
+            background-color:blue;
+            max-width: 200px;
+            top: -50px;
+            left: 50px; /* Mozeme pouzit top, bottom, left, right na poziciovanie relativneho div */
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="pozicia">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae enim explicabo fuga, id minus nesciunt quis sequi suscipit ut vel voluptatem? Aspernatur blanditiis cupiditate doloribus fugit numquam odio rem?
+    </div>
+    <div class="pozicia-druha">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae enim explicabo fuga, id minus nesciunt quis sequi suscipit ut vel voluptatem? Aspernatur blanditiis cupiditate doloribus fugit numquam odio rem?
+    </div>
+</div>
+</body>
+</html>
