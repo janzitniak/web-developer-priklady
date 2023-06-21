@@ -1,7 +1,7 @@
 <?php
 // https://www.w3schools.com/php/php_mysql_update.asp
 include "hlavicka.php";
-require_once "db.php";
+require "db.php";
 echo "<h1>ULOŽENÝ UPRAVENÝ ZÁZNAM | Evidencia výdavkov | webová aplikácia</h1>";
 // Získanie údajov z formulára
 $id = $_POST['id'];

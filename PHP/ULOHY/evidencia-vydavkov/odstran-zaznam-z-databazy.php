@@ -8,13 +8,14 @@ $id = $_GET['id'];
 
 // SQL query na odstranenie zaznamu, teda (D)ELETE
 $sql = "DELETE FROM vydavky WHERE id = $id";
+//echo $sql;
 
-if ($conn->query($sql)) {
+if (mysqli_query($conn, $sql)) {
     echo "Záznam s id=$id bol úspešne odstránený!";
 } else {
     echo "Chyba pri odstraňovaní záznamu:" . mysqli_error($conn);
 }
 
-$conn->close();
+mysqli_close($conn);
 include "spat.php";
 include "pata.php";
