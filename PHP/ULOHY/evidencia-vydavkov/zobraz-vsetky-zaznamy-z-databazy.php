@@ -1,6 +1,7 @@
 <?php
 // https://www.w3schools.com/php/php_mysql_select.asp
 include "hlavicka.php";
+require "kontrola-prihlasenia.php";
 require "db.php";
 echo "<h1>ZOBRAZ VŠETKY ZÁZNAMY | Evidencia výdavkov | webová aplikácia</h1>";
 // SQL query na zobrazenie vsetkych udajov, teda (R)EAD

@@ -1,6 +1,7 @@
 <?php
 // https://www.w3schools.com/php/php_mysql_select.asp
 include "hlavicka.php";
+require "kontrola-prihlasenia.php";
 require "db.php";
 echo "<h1>UPRAV ZÁZNAM | Evidencia výdavkov | webová aplikácia</h1>";
 
@@ -10,7 +11,7 @@ $id = $_GET['id'];
 // $sql = "SELECT id, nazov, kategoria, cena, datum FROM vydavky WHERE id=".$id;
 //$sql = "SELECT * FROM vydavky WHERE id=".$id;
 $sql = "SELECT id, nazov, kategoria, cena, datum FROM vydavky WHERE id=$id";
-echo $sql;
+//echo $sql;
 
 //$meno = "Ján Žitniak";
 //echo "Meno administrátora je: ".$meno;
